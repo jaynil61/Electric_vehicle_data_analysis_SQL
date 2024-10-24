@@ -44,7 +44,5 @@ This project involves analyzing a large dataset of electric vehicles registered 
 - **Create a view for vehicles with Base MSRP ≥ $50,000:**
   ```sql
   CREATE VIEW HighEndVehicles AS (SELECT VIN, Base_MSRP FROM electric_vehicles WHERE Base_MSRP >= 50000);
-
-  
   
 
