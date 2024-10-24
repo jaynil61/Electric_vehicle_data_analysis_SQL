@@ -32,4 +32,20 @@ This project involves analyzing a large dataset of electric vehicles registered 
 - **List all electric vehicles with VIN, Make, and Model:**
   ```sql
   SELECT vin, Make, Model FROM electric_vehicles;
+- **Display all columns for vehicles with Model Year 2020 or later:**
+  ```sql
+  SELECT * FROM electric_vehicles WHERE model_year >= 2020;
+- **List electric vehicles manufactured by Tesla:**
+  ```sql
+  SELECT VIN FROM electric_vehicles WHERE make = 'TESLA';
+- **Find the average Electric Range:**
+  ```sql
+  SELECT AVG(electric_range) AS Average_Electric_Range FROM electric_vehicles;
+- **Create a view for vehicles with Base MSRP ≥ $50,000:**
+  ```sql
+  CREATE VIEW HighEndVehicles AS 
+(SELECT VIN, Base_MSRP FROM electric_vehicles WHERE Base_MSRP >= 50000);
+
+  
+  
 
