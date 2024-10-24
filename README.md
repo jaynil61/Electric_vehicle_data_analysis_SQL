@@ -43,8 +43,7 @@ This project involves analyzing a large dataset of electric vehicles registered 
   SELECT AVG(electric_range) AS Average_Electric_Range FROM electric_vehicles;
 - **Create a view for vehicles with Base MSRP ≥ $50,000:**
   ```sql
-  CREATE VIEW HighEndVehicles AS 
-(SELECT VIN, Base_MSRP FROM electric_vehicles WHERE Base_MSRP >= 50000);
+  CREATE VIEW HighEndVehicles AS (SELECT VIN, Base_MSRP FROM electric_vehicles WHERE Base_MSRP >= 50000);
 
   
   
